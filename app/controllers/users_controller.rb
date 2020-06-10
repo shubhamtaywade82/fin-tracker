@@ -19,7 +19,7 @@ class UsersController < ApplicationController
         end
       else
         respond_to do |format|
-          flash.now[:alert] = 'No user found'
+          flash.now[:alert] = 'User Not found'
           format.js { render partial: 'users/f_result' }
         end
       end
